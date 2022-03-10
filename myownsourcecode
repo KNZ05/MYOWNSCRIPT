@@ -1,0 +1,27 @@
+print ("Hello Neil")
+local BankIds = {
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+    "cffd62fa-93c4-42a7-85d1-cbae1d164b8f",
+}
+_G.autoWithdraw = true
+while _G.autoWithdraw == true do
+workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "bank withdraw")
+                for i,v in pairs(BankIds) do
+                    local A_1 = 
+                    {
+                        [1] = v,
+                        [2] = 
+                    {
+                    }, 
+                        [3] = i
+                    }
+                    game.workspace["__THINGS"]["__REMOTES"]["bank withdraw"]:InvokeServer(A_1)
+                wait()
+            end
+        end
